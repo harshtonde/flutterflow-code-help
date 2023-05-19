@@ -204,7 +204,6 @@ class _AutoFillFormWidgetState extends State<AutoFillFormWidget>
                                       child: TextFormField(
                                         controller:
                                             _model.emailAddressController,
-                                        autofocus: true,
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
@@ -275,7 +274,6 @@ class _AutoFillFormWidgetState extends State<AutoFillFormWidget>
                                       width: double.infinity,
                                       child: TextFormField(
                                         controller: _model.passwordController,
-                                        autofocus: true,
                                         autofillHints: [AutofillHints.password],
                                         obscureText: !_model.passwordVisibility,
                                         decoration: InputDecoration(
