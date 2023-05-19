@@ -198,7 +198,6 @@ class _CurrencyTextFieldWidgetState extends State<CurrencyTextFieldWidget>
                                       child: TextFormField(
                                         controller:
                                             _model.currencyFieldController,
-                                        autofocus: true,
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
