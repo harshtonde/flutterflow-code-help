@@ -1,3 +1,5 @@
+import 'package:flutter/services.dart';
+
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -10,6 +12,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'currency_text_field_model.dart';
 export 'currency_text_field_model.dart';
+
+import 'package:currency_text_input_formatter/currency_text_input_formatter.dart';
 
 class CurrencyTextFieldWidget extends StatefulWidget {
   const CurrencyTextFieldWidget({Key? key}) : super(key: key);
@@ -200,6 +204,14 @@ class _CurrencyTextFieldWidgetState extends State<CurrencyTextFieldWidget>
                                             _model.currencyFieldController,
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
+                                        inputFormatters: <TextInputFormatter>[
+                                          CurrencyTextInputFormatter(
+                                            locale: 'en_IN',
+                                            decimalDigits: 0,
+                                            // rupee symbol
+                                            symbol: '\u{20B9}',
+                                          ),
+                                        ],
                                         decoration: InputDecoration(
                                           labelText: 'Amount',
                                           labelStyle:
