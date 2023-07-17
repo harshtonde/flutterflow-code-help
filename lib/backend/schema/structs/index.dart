@@ -1,3 +1,3 @@
 export '/backend/schema/util/schema_util.dart';
 
-export 'personal_details_struct.dart';
+export 'p_a_n_detail_struct.dart';

@@ -5,3 +5,5 @@ export '/pages/currency_text_field/currency_text_field_widget.dart'
     show CurrencyTextFieldWidget;
 export '/pages/start_screen/start_screen_widget.dart' show StartScreenWidget;
 export '/pages/web_view_page/web_view_page_widget.dart' show WebViewPageWidget;
+export '/pages/calendar_test/calendar_test_widget.dart' show CalendarTestWidget;
+export '/pages/pan_list/pan_list_widget.dart' show PanListWidget;
